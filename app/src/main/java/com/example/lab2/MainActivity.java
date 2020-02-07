@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         myButton.setText("Nice Job!");
 
-        EditText myTextField = (EditText) findViewById(R.id.myTextField);
+        EditText myTextField = (EditText) findViewById(R.id.editText);
         Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
