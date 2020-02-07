@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         myButton.setText("Nice Job!");
 
         EditText myTextField = (EditText) findViewById(R.id.editText);
-        Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_LONG).show();
+        String str = myTextField.getText().toString();
+        //Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_LONG).show();
+
+        goToActivity2(str);
     }
 
     public void goToActivity2(String str) {
